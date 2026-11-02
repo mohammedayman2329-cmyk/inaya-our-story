@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#101525">
+<meta name="description" content="A personal story, written in time — a birthday gift from Ayman to Inaya.">
+<title>Inaya — Our Story</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#101525;--burgundy:#481c30;--rose:#b77c8b;--ivory:#f5ebdd;--champagne:#d9bd91;--lavender:#77718e;--ink:#242333;--muted:#c9bfbd;--serif:'Playfair Display',Georgia,serif;--display:'Cormorant Garamond',Georgia,serif;--sans:'Inter',Arial,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--navy);color:var(--ivory);font-family:var(--sans);overflow-x:hidden}button{font:inherit}button:focus-visible,a:focus-visible{outline:2px solid var(--champagne);outline-offset:4px}
+#grain{position:fixed;inset:0;pointer-events:none;z-index:20;opacity:.09;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E")}
+.ambient{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}.orb{position:absolute;border-radius:50%;filter:blur(70px);opacity:.16;animation:drift 18s ease-in-out infinite alternate}.orb.one{width:34rem;height:34rem;background:#8c526b;top:-15rem;left:-12rem}.orb.two{width:28rem;height:28rem;background:#77718e;right:-14rem;bottom:-12rem;animation-delay:-7s}@keyframes drift{to{transform:translate(7vw,8vh) scale(1.12)}}
+#app{position:relative;z-index:1}.screen{min-height:100svh;display:none;position:relative;padding:clamp(24px,5vw,72px) max(22px,calc((100vw - 980px)/2));}.screen.active{display:flex;flex-direction:column;animation:sceneIn .85s cubic-bezier(.2,.75,.2,1) both}@keyframes sceneIn{from{opacity:0;transform:translateY(18px);filter:blur(5px)}to{opacity:1;transform:none;filter:none}}
+.center{justify-content:center;align-items:center;text-align:center}.eyebrow{font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;color:var(--champagne);font-weight:600}.hero-title{font:500 clamp(3.1rem,9vw,7.8rem)/.98 var(--serif);letter-spacing:-.045em;margin:25px 0 22px}.hero-title em{font-family:var(--display);font-weight:400;color:var(--rose)}.lead{font:400 clamp(1.2rem,2.5vw,1.65rem)/1.5 var(--display);color:#e1d3cb;max-width:620px;margin:0 auto}.small-note{font-size:.78rem;color:#aaa4ad;letter-spacing:.04em}
+.primary,.secondary,.nav-btn{border:1px solid rgba(217,189,145,.55);background:transparent;color:var(--ivory);padding:14px 22px;border-radius:99px;cursor:pointer;transition:.25s ease}.primary{background:var(--champagne);color:#201b24;border-color:var(--champagne);font-weight:600}.primary:hover{background:#ead4ae;transform:translateY(-2px)}.secondary:hover,.nav-btn:hover{background:rgba(217,189,145,.12);border-color:var(--champagne)}.intro-actions{margin-top:42px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.chapter-top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:clamp(45px,9vh,100px)}.brandmark{font:500 1rem var(--display);letter-spacing:.12em;color:var(--champagne)}.progress-wrap{display:flex;align-items:center;gap:12px;flex:1;max-width:360px}.progress-track{height:2px;background:#ffffff20;flex:1;border-radius:4px;overflow:hidden}.progress-fill{height:100%;width:0;background:var(--champagne);transition:width .5s}.progress-label{font-size:.65rem;color:#aaa4ad;letter-spacing:.12em}
+.chapter-content{width:min(100%,780px);margin:0 auto;flex:1;display:flex;flex-direction:column;justify-content:center;padding-bottom:30px}.chapter-kicker{font-size:.7rem;letter-spacing:.25em;text-transform:uppercase;color:var(--champagne);margin-bottom:18px}.chapter-title{font:500 clamp(2.6rem,7vw,5.4rem)/1.03 var(--serif);letter-spacing:-.035em;margin:0 0 30px}.chapter-title em{font-family:var(--display);color:var(--rose);font-weight:400}.story-copy{font:400 clamp(1.18rem,2.2vw,1.45rem)/1.72 var(--display);color:#e7ded8;max-width:710px}.story-copy p{margin:0 0 1.05em}.story-copy strong{color:var(--champagne);font-weight:500}.quote{font:italic 500 clamp(2rem,5vw,3.8rem)/1.2 var(--display);color:var(--champagne);margin:40px 0 15px;padding-left:24px;border-left:1px solid #b77c8b;max-width:650px}.quote-caption{color:#a9a0a6;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase}
+.scene-2023{background:radial-gradient(ellipse at 80% 25%,#64506a55,transparent 45%)}.scene-distance{background:linear-gradient(145deg,#101525 5%,#211d31 55%,#241724)}.scene-reconnect{background:radial-gradient(ellipse at 50% 0%,#9a705344,transparent 55%)}.scene-intimate{background:radial-gradient(ellipse at 80% 80%,#7c314e55,transparent 50%),linear-gradient(145deg,#241523,#101525)}.scene-patience{background:radial-gradient(ellipse at 50% 15%,#77718e44,transparent 55%)}
+.scene-nav{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #ffffff20;padding-top:22px;margin-top:35px;gap:12px}.nav-group{display:flex;gap:10px}.nav-btn{padding:11px 18px;font-size:.82rem}.nav-btn:disabled{opacity:.25;cursor:not-allowed}.chapter-count{font-size:.68rem;letter-spacing:.14em;color:#a9a0a6}
+.timeline{margin:38px 0 12px;display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative}.timeline:before{content:"";position:absolute;top:13px;left:7%;right:7%;height:1px;background:#ffffff35}.milestone{position:relative;text-align:center;z-index:1}.milestone button{width:27px;height:27px;border-radius:50%;border:1px solid var(--champagne);background:var(--navy);color:var(--champagne);cursor:pointer;transition:.25s}.milestone button:hover{background:var(--champagne);color:var(--navy);transform:scale(1.12)}.milestone span{display:block;font-size:.68rem;color:#c9bfbd;margin-top:11px;line-height:1.4}.milestone b{display:block;color:var(--ivory);font-weight:500;font-size:.75rem;margin-bottom:3px}
+.final-screen{background:radial-gradient(ellipse at 50% 35%,#89566b55,transparent 55%),linear-gradient(160deg,#171b2c,#321b2b 75%,#101525)}.birthday{font:500 clamp(3.5rem,11vw,8.7rem)/.95 var(--serif);letter-spacing:-.05em;margin:22px 0}.birthday span{display:block;color:var(--champagne);font:400 .55em var(--display);letter-spacing:.04em;margin-top:15px}.letter{max-width:680px;margin:28px auto 0;text-align:left;padding:clamp(22px,5vw,44px);border:1px solid #d9bd9140;background:#10152555;backdrop-filter:blur(10px);border-radius:4px}.letter p{font:400 clamp(1.12rem,2.1vw,1.38rem)/1.7 var(--display);color:#eee3dc;margin:0 0 1.05em}.letter .signature{color:var(--champagne);font-style:italic}.final-love{font:500 clamp(2.4rem,7vw,5rem) var(--display);color:var(--champagne);margin:34px 0 8px;opacity:0;transform:translateY(12px);transition:1.5s}.final-love.show{opacity:1;transform:none}
+.end-screen{background:radial-gradient(ellipse at center,#6b455b55,transparent 60%)}.end-title{font:500 clamp(2.5rem,7vw,5.5rem)/1.1 var(--serif);max-width:850px;margin:25px auto}.end-title em{font-family:var(--display);color:var(--rose);font-weight:400}.sparkle{position:absolute;width:3px;height:3px;border-radius:50%;background:var(--champagne);box-shadow:0 0 14px 3px #d9bd9170;animation:twinkle 3s infinite ease-in-out}
+@keyframes twinkle{0%,100%{opacity:.15;transform:scale(.7)}50%{opacity:1;transform:scale(1.5)}}
+.cute-float{position:fixed;z-index:2;pointer-events:none;bottom:-35px;font-family:var(--display);color:var(--rose);opacity:0;animation:floatUp var(--duration,8s) ease-in forwards;text-shadow:0 0 14px #b77c8b55}
+@keyframes floatUp{0%{opacity:0;transform:translate3d(0,0,0) rotate(-10deg) scale(.7)}12%{opacity:.65}80%{opacity:.5}100%{opacity:0;transform:translate3d(var(--drift,25px),-110vh,0) rotate(18deg) scale(1.2)}}
+.primary{position:relative;overflow:hidden}
+.primary:after{content:"";position:absolute;top:-40%;left:-35%;width:25%;height:180%;background:#ffffff55;transform:rotate(25deg);transition:left .65s ease}
+.primary:hover:after{left:120%}
+.quote{animation:quoteIn 1s ease both}
+@keyframes quoteIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.chapter-content{animation:contentIn .75s ease both}
+@keyframes contentIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.music-control{position:fixed;z-index:30;right:18px;bottom:18px;width:46px;height:46px;border-radius:50%;border:1px solid #d9bd9170;background:#101525dd;color:var(--champagne);cursor:pointer;display:none;backdrop-filter:blur(8px)}.music-control.visible{display:block}.music-control small{display:block;font-size:8px;margin-top:2px}.audio-hint{position:fixed;right:72px;bottom:29px;font-size:.65rem;color:#c9bfbd;z-index:30;display:none}.audio-hint.visible{display:block}
+@media(max-width:600px){.screen{padding:22px 22px calc(26px + env(safe-area-inset-bottom))}.chapter-top{margin-bottom:45px}.brandmark{font-size:.85rem}.progress-wrap{max-width:190px}.story-copy{line-height:1.65}.scene-nav{margin-top:25px}.nav-btn{padding:10px 14px}.timeline{grid-template-columns:1fr;gap:16px;margin:26px 0}.timeline:before{top:8px;bottom:8px;left:13px;right:auto;width:1px;height:auto}.milestone{text-align:left;display:flex;align-items:center;gap:14px}.milestone button{flex:0 0 27px}.milestone span{margin:0}.quote{margin:28px 0 12px}.letter{padding:22px 20px}.chapter-title{margin-bottom:22px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<div id="grain"></div><div class="ambient"><i class="orb one"></i><i class="orb two"></i></div>
+<main id="app">
+<section class="screen center active" id="intro">
+  <div class="eyebrow">A little something, for you · November 3</div>
+  <h1 class="hero-title">Before you<br><em>read this...</em></h1>
+  <p class="lead">There's a story I have wanted you to read.</p>
+  <p class="small-note" style="margin-top:18px">A story about admiration, distance, and finding our way back.</p><div aria-hidden="true" style="margin-top:28px;color:var(--rose);font:1.25rem var(--display);letter-spacing:.8em">✧ · ♡ · ✧</div>
+  <div class="intro-actions"><button class="primary" id="begin">Begin our story <span aria-hidden="true">→</span></button></div>
+  <div class="small-note" style="position:absolute;bottom:26px">Ayman · for Inaya</div>
+</section>
+
+<section class="screen scene-2023" data-chapter="0">
+ <header class="chapter-top"><div class="brandmark">INAYA — OUR STORY</div><div class="progress-wrap"><div class="progress-track"><div class="progress-fill"></div></div><span class="progress-label">01 / 08</span></div></header>
+ <article class="chapter-content"><div class="chapter-kicker">Chapter one · 2023</div><h2 class="chapter-title">The year it <em>all began.</em></h2><div class="story-copy">
+ <p>We were cousins, and our conversations started naturally — like two people getting to know each other as friends.</p>
+ <p>I was preparing for NEET. You were already working and attending classes. You were one year older than me, and there was something about the way you carried yourself that I noticed.</p>
+ <p>I admired you. Not because I was in love with you then, but because I genuinely respected the person you were.</p>
+ <p>Your hard work, your dedication, your maturity and the way you handled your responsibilities — I noticed all of it. You were beautiful, of course, but what stayed with me was your personality.</p>
+ <p>I never imagined that someone I initially admired would eventually become someone I would fall in love with.</p>
+ </div></article>
+ <footer class="scene-nav"><span class="chapter-count">A MEMORY FROM 2023</span><div class="nav-group"><button class="nav-btn" data-prev disabled>← Back</button><button class="nav-btn" data-next>Continue →</button></div></footer>
+</section>
+
+<section class="screen" data-chapter="1">
+ <header class="chapter-top"><div class="brandmark">INAYA — OUR STORY</div><div class="progress-wrap"><div class="progress-track"><div class="progress-fill"></div></div><span class="progress-label">02 / 08</span></div></header>
+ <article class="chapter-content"><div class="chapter-kicker">Chapter two · A feeling taking shape</div><h2 class="chapter-title">When admiration became <em>something else.</em></h2><div class="story-copy">
+ <p>As time passed, I went through a breakup in my previous relationship. My conversations with you continued, and slowly, a different kind of feeling began to grow.</p>
+ <p>I remember our video calls. I remember watching you groom yourself and get ready. Even those ordinary moments became special to me. I started noticing the little things.</p>
+ <p>One day, while you were sleeping during a video call, I quietly said something I thought you hadn't heard.</p>
+ </div><blockquote class="quote">“I love you, Inaya. You're my dream girl.”</blockquote><div class="quote-caption">A thought I believed had stayed between me and the quiet.</div></article>
+ <footer class="scene-nav"><span class="chapter-count">SOME WORDS ARRIVED BEFORE I WAS READY</span><div class="nav-group"><button class="nav-btn" data-prev>← Back</button><button class="nav-btn" data-next>Continue →</button></div></footer>
+</section>
+
+<section class="screen scene-distance" data-chapter="2">
+ <header class="chapter-top"><div class="brandmark">INAYA — OUR STORY</div><div class="progress-wrap"><div class="progress-track"><div class="progress-fill"></div></div><span class="progress-label">03 / 08</span></div></header>
+ <article class="chapter-content"><div class="chapter-kicker">Chapter three · The distance</div><h2 class="chapter-title">Somewhere, we <em>drifted.</em></h2><div class="story-copy">
+ <p>Things slowly changed. Our conversations became less frequent, and eventually, you started ignoring me.</p>
+ <p>There was also the incident during my Mumbai trip. I shared something with Mahek about us meeting, and that information reached your ex. He became upset and came to your house, creating a difficult situation.</p>
+ <p>You were angry with me, and I apologised. You forgave me. The incident taught me an important lesson about trust, privacy and keeping personal matters between the people involved.</p>
+ <p>I also realised that I didn't always know how to manage my emotions. Eventually, we drifted apart. Sometimes you would message after a few months. Sometimes there was silence.</p>
+ <p>I didn't fully understand what was happening then. Looking back, I understand that you had your own reasons and circumstances. I don't want to rewrite the past or blame anyone.</p>
+ <p>Some experiences simply teach us things we couldn't have learned otherwise.</p>
+ </div></article>
+ <footer class="scene-nav"><span class="chapter-count">NOT EVERY CHAPTER IS EASY</span><div class="nav-group"><button class="nav-btn" data-prev>← Back</button><button class="nav-btn" data-next>Continue →</button></div></footer>
+</section>
+
+<section class="screen scene-reconnect" data-chapter="3">
+ <header class="chapter-top"><div class="brandmark">INAYA — OUR STORY</div><div class="progress-wrap"><div class="progress-track"><div class="progress-fill"></div></div><span class="progress-label">04 / 08</span></div></header>
+ <article class="chapter-content"><div class="chapter-kicker">Chapter four · October 8</div><h2 class="chapter-title">The second <em>beginning.</em></h2><div class="story-copy">
+ <p>Years passed. Then came October 8.</p>
+ <p>We started talking again. I finally asked why you had distanced yourself. You explained the circumstances surrounding your previous relationship, including your ex's behaviour and the concerns about being watched or misunderstood.</p>
+ <p>We began reconnecting. You asked for my photograph. I initially sent an AI-generated photo, but you asked for the real one. I sent it, and you complimented me. I asked for yours, and I complimented you too.</p>
+ <p>Our conversations slowly became regular. There were small misunderstandings about reply timings. Sometimes you waited for me while I assumed you had left the chat. I explained that I hadn't realised you were waiting.</p>
+ <p>Eventually, I started waiting for you too. Those conversations became part of my everyday happiness.</p>
+ <p>It felt like something familiar was returning, but this time we were getting to know each other differently.</p>
+ </div><blockquote class="quote">“I started waiting for you too.”</blockquote></article>
+ <footer class="scene-nav"><span class="chapter-count">OCTOBER 8 · A NEW PAGE</span><div class="nav-group"><button class="nav-btn" data-prev>← Back</button><button class="nav-btn" data-next>Continue →</button></div></footer>
+</section>
+
+<section class="screen scene-intimate" data-chapter="4">
+ <header class="chapter-top"><div class="brandmark">INAYA — OUR STORY</div><div class="progress-wrap"><div class="progress-track"><div class="progress-fill"></div></div><span class="progress-label">05 / 08</span></div></header>
+ <article class="chapter-content"><div class="chapter-kicker">Chapter five · October 14–22</div><h2 class="chapter-title">Closer than <em>before.</em></h2><div class="story-copy">
+ <p>Something changed between us.</p>
+ <p>Our conversations became more romantic, intimate and emotionally open. We shared private moments and expressed feelings that we had previously kept inside.</p>
+ <p>We experienced a closeness that felt different from ordinary friendship. For a while, it almost felt like we were already a couple.</p>
+ <p>Neither of us regretted those moments. These days became a special part of our story.</p>
+ </div><blockquote class="quote">“Somehow, we found our way back.”</blockquote><div class="quote-caption">October 14 to October 22 · A closeness that mattered.</div></article>
+ <footer class="scene-nav"><span class="chapter-count">A PRIVATE PART OF OUR STORY</span><div class="nav-group"><button class="nav-btn" data-prev>← Back</button><button class="nav-btn" data-next>Continue →</button></div></footer>
+</section>
+
+<section class="screen scene-patience" data-chapter="5">
+ <header class="chapter-top"><div class="brandmark">INAYA — OUR STORY</div><div class="progress-wrap"><div class="progress-track"><div class="progress-fill"></div></div><span class="progress-label">06 / 08</span></div></header>
+ <article class="chapter-content"><div class="chapter-kicker">Chapter six · A little patience</div><h2 class="chapter-title">When happiness started feeling <em>scary.</em></h2><div class="story-copy">
+ <p>Eventually, you started feeling afraid. You told me that in your previous relationship, things had once seemed perfect, but eventually everything went wrong.</p>
+ <p>You were afraid that the same thing might happen again. I learned more about your past, including the difficulties involving your ex's family and the reasons you eventually decided to leave that relationship.</p>
+ <p>I understood that you were still healing. You wanted to become settled in life. You said it might take three years or even longer. I also have my own journey ahead. I may need around five years to become financially and personally settled.</p>
+ <p>I told you that I would wait until you felt ready. But I don't want this chapter to sound like a dramatic sacrifice or an obligation.</p>
+ <p>I want it to communicate something simple: I respect your healing. I respect your pace. I want both of us to grow.</p>
+ <p>We have already confessed that we love each other. We don't need to pretend those feelings aren't there. But we also don't need to rush our future.</p>
+ </div><blockquote class="quote">“I don't want to rush your healing.”</blockquote></article>
+ <footer class="scene-nav"><span class="chapter-count">GROW AT YOUR OWN PACE</span><div class="nav-group"><button class="nav-btn" data-prev>← Back</button><button class="nav-btn" data-next>Continue →</button></div></footer>
+</section>
+
+<section class="screen" data-chapter="6">
+ <header class="chapter-top"><div class="brandmark">INAYA — OUR STORY</div><div class="progress-wrap"><div class="progress-track"><div class="progress-fill"></div></div><span class="progress-label">07 / 08</span></div></header>
+ <article class="chapter-content"><div class="chapter-kicker">Chapter seven · 2023 → 2026</div><h2 class="chapter-title">The boy who <em>admired you.</em></h2><div class="story-copy">
+ <p>Sometimes I think about the Ayman from 2023.</p>
+ <p>Back then, I admired you for your maturity, your hard work and your personality. I didn't know how much you would eventually mean to me.</p>
+ <p>There is something else from 2023 that has stayed with me. When I was thinking about my future and internships, you were the first person I reached out to. I asked you what I should focus on, and you told me that, at the beginning, I should choose experience over money. That advice stayed with me — and I followed it.</p>
+ <p>About four months ago, when I got an internship, I messaged you first. I wanted you to be one of the first people to know. You didn't reply to that message, but I waited. Maybe because your opinion mattered to me, and because I wanted to share that little milestone with you.</p>
+ <p>Today, I know that we have shared feelings, memories, laughter, misunderstandings, private moments and a second beginning.</p>
+ <p>I cannot predict exactly where life will take us. I don't know what every tomorrow will look like.</p>
+ <p>But I am grateful that I got to know you in the way I do today. The person I admired then is someone I now know more deeply — and care for in a way I couldn't have imagined.</p>
+ </div>
+ <div class="timeline" aria-label="Our story timeline">
+  <div class="milestone"><button data-jump="0" aria-label="Go to 2023">✦</button><span><b>2023</b>The admiration</span></div>
+  <div class="milestone"><button data-jump="2" aria-label="Go to the distance">✦</button><span><b>The distance</b>Lessons & silence</span></div>
+  <div class="milestone"><button data-jump="3" aria-label="Go to October 8">✦</button><span><b>October 8</b>Reconnection</span></div>
+  <div class="milestone"><button data-jump="4" aria-label="Go to October 14–22">✦</button><span><b>Oct 14–22</b>Closer than before</span></div>
+  <div class="milestone"><button data-jump="7" aria-label="Go to birthday">✦</button><span><b>November 3</b>This one's for you</span></div>
+ </div>
+ </article>
+ <footer class="scene-nav"><span class="chapter-count">2023 — 2026 · STILL GRATEFUL</span><div class="nav-group"><button class="nav-btn" data-prev>← Back</button><button class="nav-btn" data-next>Continue →</button></div></footer>
+</section>
+
+<section class="screen final-screen center" data-chapter="7">
+ <header class="chapter-top" style="width:100%;margin-bottom:35px"><div class="brandmark">INAYA — OUR STORY</div><div class="progress-wrap"><div class="progress-track"><div class="progress-fill"></div></div><span class="progress-label">08 / 08</span></div></header>
+ <div class="chapter-content" style="text-align:center;flex:0">
+  <div class="chapter-kicker">November 3 · A day for you</div>
+  <h2 class="birthday">Happy Birthday,<span>Inaya.</span></h2>
+  <p class="lead">I hope this year is gentle with you, and full of everything your heart has been working towards.</p>
+  <div class="letter">
+   <p>And after everything — the conversations, the silence, the distance, the unexpected second beginning and all the little memories in between — there's something I still want you to know.</p>
+   <p>I admired you in 2023.</p>
+   <p>I fell in love with you somewhere along the way.</p>
+   <p>And today, I am genuinely grateful that you're a part of my life.</p>
+   <p>I don't know exactly what tomorrow holds for us. I don't know where life will take us or how many things will change along the way.</p>
+   <p>But I know what my heart feels today.</p>
+   <p class="final-love" id="finalLove">I love you, Inaya.</p>
+   <p>Not just for the beautiful person I see, but for the person I have come to know, admire and cherish.</p>
+   <p>Happy Birthday, my favourite person. ❤️</p>
+   <p class="signature">— Ayman</p>
+  </div>
+  <div class="intro-actions"><button class="primary" id="toEnd">One last thing →</button></div>
+ </div>
+ <footer class="scene-nav" style="width:100%"><span class="chapter-count">MADE WITH LOVE, BY AYMAN</span><div class="nav-group"><button class="nav-btn" data-prev>← Back</button></div></footer>
+</section>
+
+<section class="screen end-screen center" id="ending">
+ <div class="eyebrow">The last page, for now</div>
+ <h2 class="end-title">End of this chapter.<br><em>Not necessarily the end of our story.</em></h2>
+ <p class="lead">Made with love, by Ayman.</p>
+ <div class="intro-actions"><button class="primary" id="replay">Read our story again ↺</button></div>
+ <p class="small-note" style="margin-top:35px">For Inaya · November 3</p>
+</section>
+</main>
+<button class="music-control" id="music" aria-label="Play background music" title="Play optional background music">♫<small>OFF</small></button><span class="audio-hint" id="audioHint">Add a local file named music.mp3 to enable music</span>
+<audio id="bgAudio" loop preload="none"><source src="music.mp3" type="audio/mpeg"></audio>
+<script>
+(()=>{
+ const screens=[...document.querySelectorAll('[data-chapter]')], intro=document.getElementById('intro'), ending=document.getElementById('ending');
+ let current=-1;
+ const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ function show(index){
+   if(index<0){current=-1;ending.classList.remove('active');screens.forEach(s=>s.classList.remove('active'));intro.classList.add('active');return}
+   if(index>=screens.length){screens.forEach(s=>s.classList.remove('active'));ending.classList.add('active');current=screens.length;return}
+   intro.classList.remove('active');ending.classList.remove('active');
+   screens.forEach((s,i)=>s.classList.toggle('active',i===index));
+   current=index;
+   const el=screens[index], fill=el.querySelector('.progress-fill'), label=el.querySelector('.progress-label');
+   if(fill)fill.style.width=((index+1)/screens.length*100)+'%';
+   if(label)label.textContent=String(index+1).padStart(2,'0')+' / 08';
+   const prev=el.querySelector('[data-prev]');if(prev)prev.disabled=index===0;
+   window.scrollTo({top:0,behavior:reduced?'auto':'smooth'});
+   if(index===7){setTimeout(()=>document.getElementById('finalLove').classList.add('show'),900)}
+ }
+ document.getElementById('begin').addEventListener('click',()=>show(0));
+ document.querySelectorAll('[data-next]').forEach(b=>b.addEventListener('click',()=>show(current+1)));
+ document.querySelectorAll('[data-prev]').forEach(b=>b.addEventListener('click',()=>show(current-1)));
+ document.querySelectorAll('[data-jump]').forEach(b=>b.addEventListener('click',()=>show(Number(b.dataset.jump))));
+ document.getElementById('toEnd').addEventListener('click',()=>show(screens.length));
+ document.getElementById('replay').addEventListener('click',()=>show(-1));
+ // Optional soundtrack: no autoplay; if music.mp3 is absent, the control explains how to add it.
+ const audio=document.getElementById('bgAudio'),music=document.getElementById('music'),hint=document.getElementById('audioHint');
+ music.classList.add('visible');
+ let audioAvailable=true;
+ audio.addEventListener('error',()=>{audioAvailable=false;hint.classList.add('visible');music.querySelector('small').textContent='OFF';music.setAttribute('aria-label','Background music unavailable')});
+ music.addEventListener('click',async()=>{
+   if(!audioAvailable){hint.classList.toggle('visible');return}
+   try{if(audio.paused){await audio.play();music.querySelector('small').textContent='ON';hint.classList.remove('visible')}else{audio.pause();music.querySelector('small').textContent='OFF'}}
+   catch(e){hint.classList.add('visible')}
+ });
+ // Small, restrained star-like details and occasional cute floating symbols.
+ if(!reduced){
+   for(let i=0;i<22;i++){const s=document.createElement('i');s.className='sparkle';s.style.left=(4+Math.random()*92)+'%';s.style.top=(5+Math.random()*90)+'%';s.style.animationDelay=(-Math.random()*4)+'s';document.body.appendChild(s)}
+   const symbols=['♡','✧','✦','❀'];
+   function floatSweetDetail(){
+     if(document.hidden) return;
+     const item=document.createElement('span');
+     item.className='cute-float';
+     item.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+     item.style.left=(8+Math.random()*84)+'vw';
+     item.style.setProperty('--duration',(7+Math.random()*5)+'s');
+     item.style.setProperty('--drift',(-35+Math.random()*70)+'px');
+     item.style.fontSize=(14+Math.random()*13)+'px';
+     document.body.appendChild(item);
+     setTimeout(()=>item.remove(),12500);
+   }
+   setInterval(floatSweetDetail,2100);
+ }
+})();
+</script>
+</body>
+</html>
